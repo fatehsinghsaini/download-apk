@@ -109,14 +109,7 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
-        <item name="sv_backgroundColor">@color/colorTransparentDarkBlack</item>
-        <item name="sv_showcaseColor">@color/showcasebackgroundCircleColor</item>
-        <item name="sv_buttonText">Hide</item>
-        <item name="sv_tintButtonColor">false</item>
-        <item name="sv_titleTextAppearance">@style/TextStyleShowcaseTitle</item>
-        <item name="sv_detailTextAppearance">@style/TextStyleShowcaseDescription</item>
-    </style>
+ 
 
     <style name="AppThemeSplash" parent="android:Theme">
         <item name="android:windowDisablePreview">true</item>

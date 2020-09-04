@@ -43,6 +43,7 @@
     <color name="blackl">#1d1f20</color>
     <color name="color_wallet_screen">#47535d</color>
     <color name="bg_color">#E5E5E5</color>
+    <color name="transparent">#80000000</color>
 
 
 </resources>

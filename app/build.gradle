@@ -75,6 +75,9 @@ dependencies {
 
     /*CircleImageView*/
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.chaos.view:pinview:1.4.3'
+    implementation 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
+
 
 
 }
