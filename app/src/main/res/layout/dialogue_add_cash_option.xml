@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.cardview.widget.CardView-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--android:id="@+id/card_view"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_margin="@dimen/_25sdp"-->
+<!--android:layout_height="match_parent"-->
+<!--android:backgroundTint="@color/white"-->
+<!--card_view:cardCornerRadius="@dimen/_6sdp"-->
+<!--card_view:contentPadding="@dimen/_8sdp"-->
+<!--card_view:cardElevation="@dimen/_3sdp"-->
+<!--card_view:cardPreventCornerOverlap="false"-->
+<!--card_view:cardUseCompatPadding="true">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="@dimen/_11sdp"
+            android:src="@mipmap/back_button" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/ToolbarTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerInParent="true"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Select Payment" />
+    </RelativeLayout>
+
+
+    <!--<androidx.appcompat.widget.AppCompatImageView-->
+    <!--android:padding="@dimen/_5sdp"-->
+    <!--android:id="@+id/img_Notification"-->
+    <!--app:srcCompat="@layout/action_bar_notification_icon"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        card_view:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_accountSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded_background_pan_grey_light"
+            android:padding="@dimen/_8sdp"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_amountLabel"
+                style="@style/TextStyleNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Amount to be added"
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/_12sdp"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:tint="@color/textColorGray"
+                card_view:layout_constraintStart_toEndOf="@+id/txt_amountLabel"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_cardLabel"
+            style="@style/TextStyleNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cards"
+            android:textColor="@color/textColorLightBlack"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/cl_accountSection"
+            card_view:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_addCardSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_rounded_background_pan_grey_light"
+            android:padding="@dimen/_8sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/txt_cardLabel">
+<androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/imvCard"
+    android:layout_width="@dimen/_25sdp"
+    android:layout_height="@dimen/_25sdp"
+    android:src="@drawable/credit_card_icon"
+    card_view:layout_constraintStart_toStartOf="parent"
+    card_view:layout_constraintTop_toTopOf="parent"
+    card_view:layout_constraintBottom_toBottomOf="parent"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_addCard"
+                style="@style/TextStyleSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Credit/Debit"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/imvCard"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_savePay"
+                style="@style/TextStyleNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Save and pay"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="@dimen/_12sdp"
+                card_view:layout_constraintTop_toBottomOf="@id/txt_addCard"
+                card_view:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_walletLabel"
+            style="@style/TextStyleNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Wallets"
+            android:textColor="@color/textColorLightBlack"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/cl_addCardSection"
+            card_view:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_paytmSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_rounded_background_pan_grey_light"
+            android:padding="@dimen/_8sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/txt_walletLabel">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvPaytm"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/paytm_logo"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Paytm"
+                style="@style/TextStyleSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Paytm"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/imvPaytm"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_PayUbiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_rounded_background_pan_grey_light"
+            android:padding="@dimen/_8sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/cl_paytmSection">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvPayU"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/payu_icon"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_PayUbiz"
+                style="@style/TextStyleSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PayU"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/imvPayU"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_Mobikwick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_rounded_background_pan_grey_light"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            card_view:layout_constraintTop_toBottomOf="@+id/cl_PayUbiz">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Mobikwick"
+                style="@style/TextStyleNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mobikwik"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="@dimen/_16ssp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_ViewMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:visibility="gone"
+            android:background="@color/colorItemBackgroundWhite"
+            android:padding="@dimen/_10sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/cl_Mobikwick">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_ViewMore"
+                style="@style/TextStyleNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:text="View more Wallets"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/_16ssp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_upiLabel"
+            style="@style/TextStyleNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="UPI/Google Pay/BHIM"
+            android:textColor="@color/textColorLightBlack"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/cl_ViewMore"
+            card_view:layout_constraintStart_toStartOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_UPISection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_rounded_background_pan_grey_light"
+            android:padding="@dimen/_8sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/txt_upiLabel">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvUPI"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/plus_icon"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_UPI"
+                style="@style/TextStyleSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pay with other UPI ID"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/imvUPI"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_netbanking"
+            style="@style/TextStyleNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NETBANKING"
+            android:visibility="visible"
+            android:textColor="@color/textColorLightBlack"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/cl_UPISection"
+            card_view:layout_constraintStart_toStartOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_NetbankingSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:visibility="visible"
+            android:background="@drawable/button_rounded_background_pan_grey_light"
+            android:padding="@dimen/_8sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/txt_netbanking">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Netbanking"
+                style="@style/TextStyleSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL Net Banking"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="@dimen/_14ssp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+</LinearLayout><!--</androidx.cardview.widget.CardView>-->

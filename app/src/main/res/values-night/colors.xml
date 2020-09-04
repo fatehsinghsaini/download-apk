@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#101D25</color>
+    <color name="selectedTab">#466FA7</color>
+    <color name="walletBackground">#232D36</color>
+    <color name="black">#D5D6D8</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorTransparentGray">#11D5D6D8</color>
+    <color name="colorTransparentDarkBlack">#c8000000</color>
+    <color name="colorTransparentBlack">#33000000</color>
+    <color name="createTeamColor">#D5D6D8</color>
+    <color name="GrayColorMain">#232D36</color>
+    <color name="colorRed">#df2826</color>
+    <color name="green">#02e677</color>
+    <color name="dark_green">#155C15</color>
+    <color name="greenlightText">#6bb76b</color>
+    <color name="yellow">#ead303</color>
+    <color name="dark_yellow">#FF9800</color>
+    <color name="orange">#F59A23</color>F59A23
+    <color name="captainColor">#CA2B30</color>
+    <color name="vicecaptainColor">#F57E23</color>
+    <color name="light_pink">#FEF8ED</color>
+    <color name="whiteTab">#101D25</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="profile_bg_color">#99211b3c</color>
+    <color name="lightWhite">#FFFAFAFA</color>
+
+
+    <color name="simpletooltip_background">@color/colorASPrimary</color>
+    <color name="simpletooltip_text">@color/whiteTab</color>
+    <color name="simpletooltip_arrow">@color/colorASPrimary</color>
+    <color name="showcasebackgroundColor">#aa232323</color>
+    <color name="showcasebackgroundCircleColor">#D4D4D4</color>
+
+    <color name="green_color">#44CF53</color>
+    <color name="firoziColor">#25a3d5</color>
+    <color name="orangeColor">#f26f11</color>
+
+    <color name="grey">#abb5be</color>
+    <color name="blackl">#1d1f20</color>
+    <color name="color_wallet_screen">#47535d</color>
+    <color name="bg_color">#E5E5E5</color>
+
+</resources>

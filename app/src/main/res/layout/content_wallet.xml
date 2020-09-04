@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/iv_rupee_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@mipmap/total_balance"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/iv_rupee_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_total_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/faktpro_semibold"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="₹0.00"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/faktpro_medium"
+                android:lineSpacingExtra="6sp"
+                android:text="@string/str_total_balance"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/faktpro_normal"
+                android:lineSpacingExtra="6sp"
+                android:text="@string/str_winnings"
+                android:textColor="@color/textColorLightBlack"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_winnings"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:elevation="@dimen/_7sdp"
+            app:cardBackgroundColor="@color/walletBackground"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_7sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_your_winning"
+                    android:layout_width="50dp"
+                    android:layout_height="49dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/your_winnings" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/iv_your_winning"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/faktpro_semibold"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/str_your_winnings"
+                        android:textColor="@color/textColorLightBlack"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/faktpro_normal"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/str_money_you_won"
+                        android:textColor="@color/textColorGray"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_winining_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:text="₹0.00"
+                    android:textColor="@color/colorASPrimary"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_verify_account_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@id/card_view_winnings"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-19dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#f7f6fb"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_verify_account_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_verify_account_wallet"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/str_verify_account_continue"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_verify_account_wallet"
+                    android:layout_width="106dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/button_rounded_background_gender_white"
+                    android:backgroundTint="@color/colorProgress"
+                    android:fontFamily="@font/faktpro_medium"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/str_verify_account"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/walletBackground"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_deposited"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/deposited" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:text="@string/str_deposited"
+                    android:textColor="#47535d"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:text="@string/str_money_you_add"
+                    android:textColor="#afafaf"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_deposited_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="₹0.00"
+                    android:textColor="#ffac18"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/walletBackground"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_cash_bonus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/cash_bonus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:text="@string/cash_bonus"
+                    android:textColor="#47535d"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:text="@string/str_offer_earned"
+                    android:textColor="#afafaf"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_cash_bonus_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:gravity="center"
+                    android:text="₹0.00"
+                    android:textColor="#60be60"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/walletBackground"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_surprise"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/surprise_bonus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:text="@string/str_surpise_bonus"
+                    android:textColor="#47535d"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:text="@string/str_express_midnight"
+                    android:textColor="#afafaf"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_surprise_bonus_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:gravity="center"
+                    android:text="₹0.00"
+                    android:textColor="#26a2d5"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="20dp"
+
+        app:cardBackgroundColor="#26a2d5"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_add_money"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/add_cash" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_add_money"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_add_money"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_add_money_desc"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_with_draw_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/walletBackground"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_with_draw"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/withdraw_money" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_with_draw"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_withdraw_money"
+                    android:textColor="#47535d"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_withdraw_money_account_verify"
+                    android:textColor="#afafaf"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_update_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/walletBackground"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_update_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_update_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/update_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_update_profile"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_update_profile"
+                    android:textColor="#47535d"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_update_profile"
+                    android:textColor="#afafaf"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_redeem_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/walletBackground"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_redeem"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/redeem_coupon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_redeem"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_redeem_coupon"
+                    android:textColor="#47535d"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_redeem_real_11"
+                    android:textColor="#afafaf"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_transaction_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/walletBackground"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_transaction"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/transaction_history" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_transaction"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_transaction"
+                    android:textColor="#47535d"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_where_how_much"
+                    android:textColor="#afafaf"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_need_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:cardBackgroundColor="@color/walletBackground"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_need_help"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/need_help" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_need_help"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_semibold"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_need_help"
+                    android:textColor="#47535d"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/faktpro_normal"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/str_help_msg"
+                    android:textColor="#afafaf"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

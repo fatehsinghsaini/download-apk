@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+            tools:contentInsetStart="0dp"
+            android:id="@+id/toolbar"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
+            android:background="@drawable/bg_toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imvUserProfile"
+                        app:civ_border_width="@dimen/_1sdp"
+                        app:civ_border_color="@color/white"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/com_facebook_profile_picture_blank_square"
+                />
+                <LinearLayout
+                        android:id="@+id/llToolbarTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:orientation="vertical"
+                >
+                    <TextView
+                            android:id="@+id/tvtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_17sdp"
+                    />
+                    <TextView
+                            android:id="@+id/tvsubtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_13sdp"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+

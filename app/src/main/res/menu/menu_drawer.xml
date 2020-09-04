@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_my_wallet"
+            android:icon="@mipmap/my_balance"
+            android:title="@string/my_balance"
+            />
+
+
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@mipmap/invite_friend"
+            android:title="@string/invite_friend" />
+
+        <item
+            android:id="@+id/nav_contest_invite_code"
+            android:icon="@mipmap/contest_invite_code"
+            android:title="@string/str_contest_invite_code" />
+
+        <item
+            android:id="@+id/nav_fantasy_point"
+            android:icon="@mipmap/fantasy_point_system"
+            android:title="@string/str_fantasy_point" />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/turn_off"
+            android:title="@string/str_logout" />
+
+
+    </group>
+
+
+</menu>

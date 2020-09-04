@@ -1,0 +1,745 @@
+<resources>
+    <!--<string name="app_name">Dream11</string>-->
+    <!--<string name="facebook_app_id">314582115819242</string>-->
+<!--
+    <string name="facebook_app_id">410035969810428</string>
+-->
+    <!--  real11fantasy@gmail.com -->
+    <string name="facebook_app_id">2116036048699346</string>
+
+    <string name="default_notification_channel_id">32000</string>
+    <string name="default_notification_channel_name">Default Notification Channel</string>
+    <string name="default_notification_channel_description">It will deliver all notification above Android Oreo. It
+        should be enabled to receive notification.
+    </string>
+
+    <string name="app_update_received">Real11 has been updated!</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+    <string name="login">Login</string>
+    <string name="let_s_play">Let\'s Play</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="have_a_referral_code">Have a referral code?</string>
+    <string name="already_a_user">Already a user?</string>
+    <string name="email_address_or_mobile_number">Email or Mobile Number</string>
+    <string name="next">Next</string>
+    <string name="or_sign_in_with">Or Sign in with</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet?</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="verify_your_number">Verify Your Number</string>
+    <string name="otp_has_been_sent_to_your_mobile_number">OTP has been sent to</string>
+    <string name="submit">Submit</string>
+    <string name="_100_just_a_step_away">20 just a step away</string>
+    <!--<string name="_100_just_a_step_away">50 just a step away</string>-->
+    <string name="claim_your_bonus_on_registration">Claim your bonus on registration</string>
+    <string name="enter_invite_code">Enter Invite Code</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_now">Login Now</string>
+    <string name="by_registering_i_agree_to">
+        <![CDATA[By registering, I agree to Real11 &#39;s]]></string>
+    <string name="t_amp_cs"><![CDATA[T&Cs]]></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="my_contest">My Contest</string>
+    <string name="profile">Profile</string>
+    <string name="more">More</string>
+    <string name="fixtures">Fixtures</string>
+    <string name="live">Live</string>
+    <string name="results">Results</string>
+    <string name="select_a_match">Select a Match</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="notification">Notifications</string>
+    <string name="filter">Filter</string>
+    <string name="wallet">Wallet</string>
+    <string name="enter_contest_code">Enter Contest Code</string>
+    <string name="create_contest">Create Contest</string>
+    <string name="create_team">Create Team</string>
+    <string name="join">Join</string>
+    <string name="hot_contest">Hot Contest</string>
+    <string name="get_ready_for_big_winnings">Get ready for big winnings</string>
+    <string name="total_winnings">Total Winnings</string>
+    <string name="Rs">\u20B9</string>
+    <string name="Rs1000">100000 \u20B9</string>
+    <string name="Rs20">20 \u20B9</string>
+    <string name="create_team1">Create Team 1</string>
+    <string name="contest">Contests</string>
+    <string name="winners">Winners</string>
+    <string name="entry_fee">Entry Fee</string>
+    <string name="join_the_contest">Join the Contest</string>
+    <string name="mega_contest">Mega Contest</string>
+    <string name="info">Info</string>
+    <string name="player">Player</string>
+    <string name="points">PTS</string>
+<!--    <string name="points">Points</string>-->
+    <string name="credits">Credits</string>
+    <string name="choose_team">Choose Team</string>
+    <string name="pick_1_wicket_keeper">Pick 1-4 Wicket-Keeper</string>
+    <string name="pick_3_5_batsmen">Pick 3–6 Batsmen</string>
+    <string name="pick_1_3_allrounder">Pick 1–4 All-Rounders</string>
+    <string name="pick_3_5_bowler">Pick 3–6 Bowlers</string>
+    <string name="dot">\u2022</string>
+    <string name="dot_value">\u2022 7</string>
+    <string name="c_will_get_2x_points_amp_vc_will_get_1_5x_points">
+        <![CDATA[(C)will get 2x Points & (VC) will get 1.5x Points]]></string>
+    <string name="choose_c_vc_title"><![CDATA[Choose C & VC]]></string>
+    <string name="save_team">Save Team</string>
+    <string name="completed">Completed</string>
+    <string name="in_progress">In Progress</string>
+    <string name="your_rewards">Your Rewards</string>
+    <string name="account">Account</string>
+    <string name="add_cash">Add Cash</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="add_funds">Add Funds</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="about">About</string>
+    <string name="rules">Rules</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+    <string name="playing_history">Playing History</string>
+    <string name="batsman">Batsmen</string>
+    <string name="totalPoints">Total Points</string>
+    <string name="allrounder">All-Rounder</string>
+    <string name="bowler">Bowler</string>
+    <string name="wicket_keeper">Wicket-Keeper</string>
+    <string name="substitute">Substitute</string>
+    <string name="contest_invite_code">Contest Invite Code</string>
+    <string name="fantasy_point_system">Fantasy Point System</string>
+    <string name="helpdesk">Helpdesk</string>
+    <string name="about_us">About Us</string>
+    <string name="wk">WK</string>
+    <string name="bat">BAT</string>
+    <string name="all">ALL</string>
+    <string name="bowl">BOWL</string>
+    <string name="edit">Edit</string>
+    <string name="preview">Preview</string>
+    <string name="clone">Clone</string>
+    <string name="capatain">CAPTAIN</string>
+    <string name="vice_caotain">VICE CAPTAIN</string>
+    <string name="vice_captain">VICE CAPTAIN</string>
+    <string name="my_team">My Team</string>
+    <string name="join_this_contest">Join This Contest</string>
+    <string name="join_plus">Join with new Team</string>
+    <string name="joined">Joined</string>
+    <string name="invite_code">Invite Code</string>
+    <string name="enter_contest_name">Enter Contest Name</string>
+    <string name="winning_amount">Enter total winning amount (Rs)</string>
+    <string name="contest_size">Contest Size</string>
+    <string name="allow_friends_to_join_with_multiple_team">Allow friends to join with multiple teams</string>
+    <string name="entry_per_team">Entry Per Team:-</string>
+    <string name="entry_is_calculated_based_on_total_prize_amount_contest_size">
+        <![CDATA[Entry is calculated based on total prize amount & contest size]]></string>
+    <string name="prize_pool">Prize Pool</string>
+    <string name="sort">Sort</string>
+    <string name="winnings">Winnings</string>
+    <string name="entry">Entry</string>
+    <string name="teams">Teams</string>
+    <string name="all_contest">All Contest</string>
+    <string name="winning_list">Winning List</string>
+    <string name="note_the_actual_prize_money_may_be_different_than_the_prize_money_mentioned_above_if_there_is_a_tie_for_any_of_the_winning_positions">
+        <b>Note:-</b>
+        The actual prize money may be different than the prize money mentioned above if there is a tie for any of the
+        winning positions. Check FAQ\'s for further details. As per government regulations, a tax of 31.2% will be
+        deducted if an individual wins more than Rs. 10,000.
+    </string>
+    <string name="view_teams">View Teams</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="legality">Legality</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="Rs10_cash">
+        <b>\u20B9 20</b>
+    </string>
+    <string name="cash_bonus">Cash Bonus</string>
+    <string name="offers">Offers</string>
+    <string name="apply_code">Apply Code</string>
+    <string name="enter_coupon_code">Enter Coupon Code</string>
+    <string name="ranking">Ranking</string>
+    <string name="change_password">Change Password</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="close">Close</string>
+    <string name="reset">Reset</string>
+
+
+    <string name="rs1_100">\u20B9 1 to \u20B9 100</string>
+    <string name="rs101_1000">\u20B9 101 to \u20B9 1000</string>
+    <string name="rs1001_5000">\u20B9 1001 to \u20B9 5000</string>
+    <string name="rs5000_more">\u20B9 5000 &amp; more</string>
+
+
+    <string name="rs1_10000">\u20B9 1 to \u20B9 10000</string>
+    <string name="rs10001_50000">\u20B9 10,001 to \u20B9 50,000</string>
+    <string name="rs50001_1lac">\u20B9 50,001 to \u20B9 1 Lakh</string>
+    <string name="rs1lac_10lac">\u20B9 1 Lakh to \u20B9 10 Lakh</string>
+    <string name="rs10lac_25lac">\u20B9 10 Lakh to \u20B9 25 Lakh</string>
+    <string name="rs25lac_more">\u20B9 25 Lakh &amp; more</string>
+
+
+    <string name="multi_entry">Multi Entry</string>
+    <string name="multi_winner">Multi Winner</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="contest_type">Contest Type</string>
+    <string name="_50_001_more"><![CDATA[50,001 & more]]></string>
+    <string name="apply">Apply</string>
+    <string name="unutilized_balance_winnings_rs_0">Unutilized balance + Winnings=</string>
+    <string name="confirmation">CONFIRMATION</string>
+    <string name="usable_cash_bonus">Usable Cash Bonus</string>
+    <string name="Rs_0">\u20B9 0</string>
+    <string name="to_pay">To Pay</string>
+    <string name="by_joining_this_contest_you_accept_t_c_and_confirm_that_you_are_not_a_resident_of_assam_odisha_talngana_or_sikkim">
+        <![CDATA[By joining this contest you accept T & C and confirm that you are not a resident of Assam, Odisha, Telangana or Sikkim.]]></string>
+    <string name="clear_all">Clear All</string>
+    <string name="invite">Invite</string>
+    <string name="joined_Contest">Joined Contest</string>
+    <string name="for_every_friend_that_plays_you_both_get_rs_100_for_free">For every friend that plays, you both get
+        \u20B9 50 for free
+    </string>
+    <string name="fantasy_status">Fantasy Status</string>
+    <string name="match">Match</string>
+    <string name="selected_by">Selected By</string>
+    <string name="player_detail">Player Detail</string>
+    <string name="rank">Rank</string>
+    <string name="joined_with">Joined With</string>
+    <string name="dream_team">Real11 Team</string>
+    <string name="player_points">Player Points</string>
+    <string name="my_account">My Account</string>
+    <string name="ok">OK</string>
+    <string name="error_network_connection">You are not connected with an active internet connection.</string>
+    <string name="enter_phone_number">Please enter mobile number</string>
+    <string name="valid_phone_number">Please enter valid mobile number</string>
+    <string name="enter_email">Please enter email address.</string>
+    <string name="valid_email">Please enter valid email address.</string>
+    <string name="enter_password">Please enter mobile number</string>
+    <string name="short_password">Password must be at least 6 characters long.</string>
+    <string name="old_short_password">Old password must be at least 6 characters long.</string>
+    <string name="new_short_password">New password must be at least 6 characters long</string>
+    <string name="confrim_short_password">Confrim password must be at least 6 characters long.</string>
+    <string name="invalid_password">Password must contain at least one alphabet and numeric character</string>
+    <string name="old_invalid_password">Old Password must contain at least one alphabet and numeric character</string>
+    <string name="new_invalid_password">New Password must contain at least one alphabet and numeric character</string>
+    <string name="confirm_invalid_password">Confirm Password must contain at least one alphabet and numeric character
+    </string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="resend_in">Resend in</string>
+    <string name="sec">seconds</string>
+    <string name="invalid_otp">Please enter valid OTP.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="want_to_logout">Are you sure you want to logout?</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="name">Name</string>
+    <string name="personal_detail">Personal Detail</string>
+    <string name="your_favourite_teams">Your Favourite Teams</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="allow_sms_notifications">Allow SMS notifications</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="pincode">Pin code</string>
+    <string name="country">Country</string>
+    <string name="change">Change</string>
+    <string name="set">Set</string>
+    <string name="state">State</string>
+    <string name="select_state">Select State</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="new_password">New password</string>
+    <string name="old_password">Old password</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="mobile_verified">Mobile Verified</string>
+    <string name="transaction_id">Transection Id:</string>
+    <string name="transaction_date">Transaction Date:</string>
+    <string name="team_name">Team Name:</string>
+    <string name="recent_transections">Recent Transactions</string>
+    <string name="timeFormat">dd MMM, yyyy</string>
+    <string name="only">Only</string>
+    <string name="spots_left">left</string>
+    <string name="view_all">More Contests</string>
+    <string name="vs">VS</string>
+    <string name="vs_small">vs</string>
+    <string name="select_captain">Please select Captain.</string>
+    <string name="select_star">Please select Star player.</string>
+    <string name="select_vc">Please select Vice Captain.</string>
+    <string name="select_match">Select Match</string>
+    <string name="india">India</string>
+    <string name="empty_password">Please enter password</string>
+    <string name="old_empty_password">Please enter old password</string>
+    <string name="new_empty_password">Please enter new password</string>
+    <string name="confrim_empty_password">Please enter confirm password</string>
+    <!--<string name="not_same_password">password and confirm password does not match</string>-->
+    <string name="not_same_password">Passwords do not match</string>
+    <string name="work_with_us">Work with Us</string>
+    <string name="team">Team</string>
+    <string name="choose_total_no_of_winners">Choose total no. of winners</string>
+
+    <string-array name="avtarImageList">
+        <item>R.drawable.avatar1</item>
+        <item>R.drawable.avatar2</item>
+        <item>R.drawable.avatar3</item>
+        <item>R.drawable.avatar4</item>
+        <item>R.drawable.avatar5</item>
+        <item>R.drawable.avatar6</item>
+        <item>R.drawable.avatar7</item>
+        <item>R.drawable.avatar8</item>
+        <item>R.drawable.avatar9</item>
+        <item>R.drawable.avatar10</item>
+
+    </string-array>
+
+    <string-array name="state">
+        <item>Select State</item>
+        <item>Andhra Pradesh</item>
+        <item>Andaman Nicobar</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Chandigarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Punjab</item>
+        <item>Pondicherry</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <string name="Rs_100">\u20B9 100</string>
+    <string name="Rs_200">\u20B9 200</string>
+    <string name="Rs_599">\u20B9 500</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="add_cash_to_your_account">Add cash to your Wallet</string>
+    <string name="amount_to_add">Amount to add</string>
+    <string name="coming_soon">Contest for this match will open soon. Stay tuned!</string>
+    <string name="contest_detail">Contest Detail</string>
+    <string name="mobile_hint_label">You will receive an OTP for verification</string>
+    <string name="email_hint_label">No spam. We promise!</string>
+    <string name="password_hint_label">Minimum 6 characters with 1 number/symbol</string>
+    <string name="join_contest">Join Contest</string>
+    <string name="prectice_contest">Practice Contest</string>
+    <string name="winner_takes_all_the_glory">Winner takes all the glory</string>
+    <string name="term_and_condition">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+            tortor quam,
+            feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+            Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+            pharetra. Vestibulum erat wisi,
+            condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum,
+            eros ipsum rutrum orci,
+            sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus,
+            neque id cursus faucibus,
+            tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt
+            quis, accumsan porttitor, facilisis luctus, metus</p>>
+    </string>
+    <string name="please_select_any">Please select any</string>
+    <string name="you_cant_select_more_than">You can\'t select more than</string>
+    <string name="join_Contest">Joined Contest</string>
+    <string name="join_contests_in_upcoming_matches">Join contests in upcoming matches</string>
+    <string name="FOR">FOR</string>
+    <string name="match_not_started">Match scheduled to start soon. Refresh shortly to see fantasy scores of players.</string>
+    <string name="select_substitute">Select Substitute</string>
+    <string name="join_new">Join+</string>
+    <string name="s">\'s</string>
+    <string name="contest_joined">Contest Joined</string>
+    <string name="didn_t_find_what_you_were_looking_for">Didn\'t find what you were looking for?</string>
+    <string name="show_me_all_contests">SHOW ME ALL CONTESTS</string>
+    <string name="paytm">PayTm</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paypal">PayPal</string>
+    <string name="Pts">Pts</string>
+    <string name="Cr">Cr</string>
+    <string name="guru">GURU</string>
+    <string name="tell_your_friends">Tell Your Friends</string>
+    <string name="share">Share</string>
+    <string name="top_players">Top Players</string>
+    <string name="points_breakup">Points Breakup</string>
+    <string name="not_in_your_team">Not in your team</string>
+    <string name="recent_performances">Recent Performances</string>
+    <string name="small_points">points</string>
+    <string name="choose_your_avatar">Choose your avatar</string>
+    <string name="save">Save</string>
+    <string name="offer_amount">Offer Amount:</string>
+    <string name="cancel">Cancel</string>
+    <string name="replace_a_player">Replace Substitute</string>
+    <string name="replace_with_substitute">Replace with Substitute</string>
+    <string name="enter_your_team_name">Enter your team name eg. XYZ</string>
+    <string name="save_team_name">Save team name</string>
+    <string name="keep_this_in_mind">Keep this in mind</string>
+    <string name="it_permanent">It\'s permanent</string>
+    <string name="your_team_name_never_changed">Your Team Name Can never be edited \nSet it right!</string>
+    <string name="it_your_identity">It\'s your identity:</string>
+    <string name="your_team_name_is_what_you">Your Team Name is what you will be known as on</string>
+    <string name="choose_wisely">. Choose wisely</string>
+    <string name="choosing_a_name">Choosing a name:</string>
+    <string name="minimum_6_characters">Minimum 6 characters</string>
+    <string name="empty_team_name">Please enter Team Name</string>
+    <string name="short_team_name">Team name must be 6 characters long.</string>
+    <string name="select_your_team_name">Select Your Team Name</string>
+    <string name="cash_bonus_to_be_eraned">Cash bonus to be earned:</string>
+    <string name="invited_friends">Invited Friends</string>
+    <string name="eranings_through_friends">Earnings through Friends</string>
+    <string name="to_be_earned">To be earned</string>
+    <string name="referral_friend_comment">The more your friends play in cash contests, the more you earn (max Rs 20
+        for each friend)
+    </string>
+    <string name="received">Received:</string>
+    <string name="version">Version</string>
+    <string name="chat_key">YR2Hmx7sa1eFUzjhOK2KNyBMn0ZpDxiY</string>
+    <string name="mobile_email"><![CDATA[MOBILE & EMAIL]]></string>
+    <string name="name_star">Name*</string>
+    <string name="pan_number">PAN number*</string>
+    <string name="date_of_birth_star">Date of birth*</string>
+    <string name="your_pan_details_have_been_submitted_please_submit_your_bank_details_to_begin_kyc_verification">Your
+        Pan details have been submitted.\nPlease submit your bank details to begin KYC\nverification.
+    </string>
+    <string name="your_bank_details_have_been_submitted">Your
+        Bank details have been submitted.
+    </string>
+    <string name="why_should_i_submit_my_pan_card">
+        <u>Why should i submit my PAN Card?</u>
+    </string>
+    <string name="upload_pan_card_image">UPLOAD PAN CARD IMAGE</string>
+    <string name="submit_for_verification">Submit For Verification</string>
+    <string name="pan_card_added">PAN Card Added</string>
+    <string name="we_will_send_you_a_verification_link_on_this_email">We will send you a verification link on this
+        email
+    </string>
+    <string name="we_won_t_post_anything_without_your_permision">We won\'t post anything without your permission
+    </string>
+    <string name="or">OR</string>
+    <string name="verify">Verify</string>
+    <string name="verify_your_email">Verify your email</string>
+    <string name="click_on_the_verification_link_in_the_mail_we_sent_you_to_verify_your_email">click on the verification
+        link in the mail\n we sent you to verify your email
+    </string>
+    <string name="in_case_you_don_t_receive_the_email_be_sure_to_chek_the_spam_junk_promotions_folder_on_your_mailbox">
+        <![CDATA[In case you don\'t receive the email, be sure to\nchek the spam/junk & promotions folder on your\nmailbox]]></string>
+    <string name="not_received_verification_email_yet">Not received verification email yet?,</string>
+    <string name="send_again">
+        <u>Send Again</u>
+    </string>
+    <string name="verify_bank_account">VERIFY BANK ACCOUNT</string>
+    <string name="verify_your_account_to_withdraw_winnings">(Verify your account to withdraw winnings)</string>
+    <string name="bank_proof_of_passbook_cheque_book_or_bank_statement">Bank proof of passbook, Cheque book or Bank
+        Statement
+    </string>
+    <string name="which_shows_your">which shows your</string>
+    <string name="name_ifsc_code_account_no"><![CDATA[Name, IFSC Code & Account No.]]></string>
+    <string name="account_number">Account number</string>
+    <string name="retype_account_number">Retype account number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="bank_name">Bank name</string>
+    <string name="bank_branch">Bank branch</string>
+    <string name="verify_bank_account_txt">VERIFY BANK ACCOUNT</string>
+    <string name="to_transfer_winnings_to_your_bankdetails_account_please_complete_the_steps_mentioned_below">To
+        transfer winnings to your Bank account, please complete the steps mentioned below:
+        \n\n 1. Verify your Mobile number
+        \n\n 2. Verify your Email id
+        \n\n 3. Verify your PAN card
+    </string>
+    <string name="enter_email_to_proceed">Please enter email to proceed verifying.</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="from_gallery">Gallery</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="_10_digits_pan_no">10 Digits PAN no.</string>
+    <string name="_12_digits_pan_no">12 Digits Aadhaar Card no.</string>
+    <string name="as_on_oan_card">As on PAN card</string>
+    <string name="enter_pan_name">Please enter PAN name to proceed.</string>
+    <string name="enter_pan_number">Please enter PAN number to proceed.</string>
+    <string name="enter_aadhar_card_number">Please enter Aadhaar Card number to proceed.</string>
+    <string name="select_dateofbirth">Please select Date of birth to proceed.</string>
+    <string name="select_state_name">Please select state name to proceed.</string>
+    <string name="aadhar_card_number">Aadhaar Card Number</string>
+    <string name="enter_account_number">Please enter account number to proceed.</string>
+    <string name="enter_retypeaccount_number">Please retype account number to proceed.</string>
+    <string name="enter_ifsc_code">Please enter IFSC Code to proceed.</string>
+    <string name="enter_bank_name">Please enter Bank Name to proceed.</string>
+    <string name="enter_bank_branch">Please enter Branch Name to proceed.</string>
+    <string name="min_200_max_2_00_000_allowed_per_day">min. <b>\u20B9 200</b> and max <b>\u20B9 50,000</b> allowed
+        per day
+    </string>
+
+    <string name="with_line_first">- user can withdraw ( minimum of INR 200 and maximum of INR 50,000) per day.</string>
+    <string name="with_line_second">- user can withdraw a minimum of INR 200 and maximum amount INR 10,000 in a day as part of instant withdraw. Instant withdrawal amount credited your account within 5-6 hour.</string>
+    <string name="with_line_third">- The withdrawal amount (except instant withdrawal or above INR10,000) is credited to user’s bank account within 2-3 working days.</string>
+    <string name="with_line_fourth">- withdrawal timings are 11:00 AM to 6:00PM ( in case of instant withdraw)</string>
+
+
+
+
+    <string name="entryFeeValidation">Entry Fee cannot be less than Rs. 5</string>
+    <string name="choose_total_winners">Choose Total Winners</string>
+    <string name="recommended">(Recommended)</string>
+
+    <string name="select_series">Select Series</string>
+    <string name="verify_your_pan">VERIFY YOUR PAN</string>
+    <string name="update_account_proof">Upload Account Proof</string>
+    <string name="you_have_not_invited">You haven\'t invited any friends yet!</string>
+    <string name="withdraw_now">Withdraw Now</string>
+    <string name="enter_amount_to_proceed">Please enter amount to proceed withdraw.</string>
+    <string name="valid_amount_to_proceed">Please enter valid amount to proceed withdraw.</string>
+    <string name="offer_info_text">Each code can be redeemed for Cash Bonus once. Code can be earned on 3rd Party Apps
+        or through exclusive Promotions.
+    </string>
+    <string name="deposited_info_text">Money deposited by you can use to join any contests but can\'t withdraw</string>
+    <string name="winning_info_text">Money that you can withdraw or re-use to join any contests</string>
+    <string name="bonus_info_text">Money that can you use to join any public contest</string>
+    <string name="earned_info_text">Cash bonus will be added to your Account only when your friends have joined cash contest.</string>
+    <string name="choose_winning_breakup">Choose Winning BreakUp</string>
+    <string name="enterphone_or">Enter phone number or email.</string>
+    <string name="please_enter_code">Please enter code</string>
+    <string name="time_out">Match has been started you cannot join any contest of this match now.</string>
+    <string name="delete">Delete</string>
+    <string name="delete_notificaions">Are you sure you want to delete?</string>
+    <string name="login_using_mobile_number">Login using mobile number</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="resend_email">Resend Email</string>
+    <string name="notification_not_fount">No notification found</string>
+    <string name="joinContestInfo">Usable Cash bonus:\n 10% of Total Entry Fee* per match\n (whichever is higher)\n\n *
+        Not valid for private contests.
+    </string>
+    <string name="reset_password_info">A link to reset your password has been sent to</string>
+    <string name="add_amount_validation">Please add amount</string>
+    <string name="ranking_not_fount">No rank found</string>
+    <string name="trans_not_fount">No transaction found</string>
+    <string name="upcoming_match">Upcoming Matches</string>
+    <string name="invalid_password_2">Invalid Password.</string>
+
+    <string name="for_every_friend_that_plays_you_both_get_rs_50_for_free">For every friend that plays, you both get
+        \u20B9 50 for free
+    </string>
+    <string name="referral_friend_comment_50">The more your friends play in cash contests, the more you earn (max Rs 50
+        for each friend)
+    </string>
+    <string name="upload_image_error">Please upload PAN Card image</string>
+    <string name="upload_Bank_image_error">Please upload account proof image</string>
+    <string name="your_team_is_ready_to_join_contests">Your team is ready to join contests</string>
+    <string name="check_out_the_full_points_system">Check out the full points system</string>
+    <string name="join_contest2">Join Contest</string>
+    <string name="no_dream_team_found">No dream team found.</string>
+
+    <string name="winning">Winning Amount</string>
+    <string name="view_leadership_board">View Leadership Board</string>
+    <string name="scorecard">Scorecard</string>
+    <string name="cashfree">Other Methods</string>
+    <string name="manage_payment">Manage Payment</string>
+    <string name="player_name">Player Name</string>
+    <string name="matchwise_fantasy_status">Matchwise Fantasy Stats</string>
+    <string name="player_not_fount">No player found</string>
+    <string name="account_number_do_not_match">Account number does not match</string>
+    <string name="substitute_wicketKeeper_validation">None of your team\'s player is eligible to be replaced with your
+        substitute.
+    </string>
+    <string name="match_not_found">No Match Found</string>
+    <string name="no_contest_available">No contest available</string>
+    <string name="avg">Selected By:</string>
+    <string name="real11_team">Real11 Team</string>
+    <string name="update_now">UPDATE NOW</string>
+    <string name="view_the_selected_players_of_all_teams_after_deadline_no_team_changes_post_that">View the selected
+        players of all teams after deadline. No Team changes post that.
+    </string>
+    <string name="don_t_receive_reset_link">Didn\'t receive reset link?</string>
+    <string name="substitute_will_be_awarded_only_1_point_for_making_appearance_in_starting11_user_can_replace_substitute_in_mycontest_live_section">
+        <![CDATA[Substitute will be awarded only (1) point for making appearance in starting11. User can replace substitute in mycontest>live section]]></string>
+    <string name="you_won_this_practice_contest">You won this practice contest</string>
+    <string name="usable_bonus_percent">Usable Bonus percent =</string>
+    <string name="under_review">Under Review</string>
+    <string name="remove_coupon_code">   Remove Coupon   </string>
+    <string name="infinite">&#8734; Teams</string>
+    <string name="teams_joined">Teams Joined</string>
+    <string name="bank">Bank Account</string>
+    <string name="transfer_to">Transfer To</string>
+
+    <string name="pick_1_4_pg">Pick 1-4 Point-Guard</string>
+    <string name="pick_1_4_sg">Pick 1–4 Shooting-Guard</string>
+    <string name="pick_1_4_sf">Pick 1–4 Small-Forward</string>
+    <string name="pick_1_4_pf">Pick 1–4 Power-Forward</string>
+    <string name="pick_1_4_c">Pick 1–4 Centre</string>
+
+
+    <string name="point_gaurd">Point-Guard</string>
+    <string name="shooting_guard">Shooting-Guard</string>
+    <string name="small_forward">Small-Forward</string>
+    <string name="power_forward">Power-Forward</string>
+    <string name="centre">Centre</string>
+    <string name="str_line_up_msg">Real11 claims no responsibility of playing 11, advice to research well before team creation.</string>
+    <string name="str_total_balance">Total Balance</string>
+    <string name="str_winnings">Winnings + Unutilized + Cash Bonus</string>
+    <string name="str_your_winnings">Your Winnings</string>
+    <string name="str_money_you_won">The Money You Won</string>
+    <string name="str_surpise_bonus">Surprise Bonus</string>
+    <string name="str_cash_bonus">Cash Bonus</string>
+    <string name="str_express_midnight">Expires midnight</string>
+    <string name="str_offer_earned">Offer Earned Bonus</string>
+    <string name="str_verify_account_continue">Verify your account to activate  withdraw money service</string>
+    <string name="str_verify_account">Verify Account</string>
+    <string name="str_withdraw_money">Withdraw Money</string>
+    <string name="str_withdraw_money_account_verify">Verify your Account First</string>
+    <string name="str_update_profile">Update Profile</string>
+    <string name="str_redeem_coupon">Redeem Coupon</string>
+    <string name="str_redeem_real_11">Redeem your Real11 Coupon</string>
+    <string name="str_transaction">Transaction History</string>
+    <string name="str_where_how_much"><![CDATA[Where & How much Spent? Know All!]]></string>
+    <string name="str_need_help">Need Help?</string>
+    <string name="str_help_msg">Connect to our Customer Support</string>
+    <string name="str_add_money_desc">Credit Card, Debits Card, UPI &amp; More</string>
+    <string name="str_deposited">Deposited</string>
+    <string name="str_money_you_add">Money You Add</string>
+    <string name="str_team_name">Team Name</string>
+    <string name="str_add_money">Add Money</string>
+    <string name="str_playing_experience">Playing Experience</string>
+    <string name="str_contests_win">Contests Win</string>
+    <string name="str_matches">Matches</string>
+    <string name="str_total_contests">Total Contests</string>
+    <string name="str_series">Series</string>
+    <string name="str_profile_verification">Profile Verification</string>
+    <string name="str_series_rank">Series Rank</string>
+    <string name="str_friends">Friends</string>
+    <string name="exit">Exit</string>
+    <string name="str_rupee_icon">\u20B9</string>
+    <string name="str_prize_breakup">Prize Breakup</string>
+    <string name="str_view_teams">View the selected players of all teams after deadline. No Team changes post that.</string>
+    <string name="my_profile">My Profile</string>
+    <string name="invite_friend">Invite Friend</string>
+    <string name="str_logout">Logout</string>
+    <string name="my_balance">My Wallet</string>
+    <string name="str_withdraw_winnings">Withdraw your winnings</string>
+    <string name="str_import_facebook">Import Facebook profile photo</string>
+    <string name="str_user_name">User Name</string>
+    <string name="str_mobile_number">Mobile Number</string>
+    <string name="str_contest_invite_code">Contest Invite Code</string>
+    <string name="str_fantasy_point">Fantasy Point System</string>
+    <string name="my_contests">My Contests</string>
+    <string name="myteams">My Teams</string>
+    <string name="str_allcontests">All Contests</string>
+    <string name="str_scratch_get_lucky"><![CDATA[Scratch & Get Lucky! Get your Daily Bonus Here.]]></string>
+    <string name="str_daily_bonus">The daily bonus shall expire after midnight. Share your earning to get more rewards. Come back tomorrow for more!</string>
+    <string name="str_you_have_earned">You\'ve earned  \u20B9%s</string>
+    <string name="str_api_razorpay">rzp_live_1YZbgYq2ToPnMk</string>
+    <string name="str_date_mismatch">Phone date is inaccurate !!</string>
+    <string name="str_better_luck">Better luck next time !!</string>
+    <string name="referral_friends">Referral Friends</string>
+    <string name="total_deposit_balance">Total Deposit Balance</string>
+    <string name="affiliate_amount">Affiliate Amount</string>
+    <string name="clear">Clear</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorContestItemBackground"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_TeamName"
+        style="@style/TextStyleNormal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:text="Rank 1"
+        android:textColor="@color/textColorBlack"
+        android:textSize="@dimen/_11sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_rank"
+        style="@style/TextStyleSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/Rs1000"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/_11sdp" />
+
+    <ImageView
+        android:id="@+id/iv_gadget_league"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:padding="1dp"
+        android:src="@mipmap/dummy_avatar"
+        android:visibility="gone" />
+
+</LinearLayout>

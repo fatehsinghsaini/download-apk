@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+    <com.google.android.material.appbar.AppBarLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+        <com.google.android.material.appbar.AppBarLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:id="@+id/app_bar"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:elevation="0dp">
+            <include android:id="@+id/ll"
+                     layout="@layout/app_toolbar"/>
+            <LinearLayout
+                    android:id="@+id/ll_match"
+                    android:background="@color/colorSecondaryLight"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_9sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/txt_matchVS"
+                        style="@style/TextStyleSemiBold"
+                        android:gravity="start"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColorBlack"
+                        android:text="IND vs PAK"
+                        android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/txt_CountDownTimer"
+                        style="@style/TextStyleSemiBold"
+                        android:gravity="end"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorSecondary"
+                        android:text="@string/completed"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_joined_completed_contest_leadership"/>
+    <androidx.core.widget.NestedScrollView
+            android:visibility="gone"
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparent"
+            android:clipToPadding="true"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+        <include layout="@layout/bottom_sheet_winninglist"/>
+
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@+id/fairplay"
+             layout="@layout/dialogue_fairplay"
+             android:visibility="gone"
+    />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

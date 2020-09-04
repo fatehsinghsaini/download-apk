@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+<!--            <certificates src="@raw/real11pemfile" />-->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+
+<!--&lt;!&ndash;    <?xml version="1.0" encoding="utf-8"?>&ndash;&gt;-->
+<!--<network-security-config>-->
+<!--<domain-config>-->
+<!--    <domain-config cleartextTrafficPermitted="false">-->
+<!--        <domain includeSubdomains="true">https://real11.biz/</domain>-->
+<!--    </domain-config>-->
+<!--&lt;!&ndash;    <pin-set>&ndash;&gt;-->
+<!--&lt;!&ndash;        <pin digest="SHA-256">4hw5tz+scE+TW+mlai5YipDfFWn1dqvfLG+nU7tq1V8=</pin>&ndash;&gt;-->
+<!--&lt;!&ndash;        <pin digest="SHA-256">YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=</pin>&ndash;&gt;-->
+<!--&lt;!&ndash;    </pin-set>&ndash;&gt;-->
+<!--</domain-config>-->
+<!--</network-security-config>-->

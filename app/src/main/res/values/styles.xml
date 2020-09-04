@@ -1,0 +1,129 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="colorAccent">@color/textColorBlack</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:minWidth">0dip</item>
+        <item name="android:paddingStart">8dip</item>
+        <item name="android:paddingEnd">8dip</item>
+        <!--<item name="android:fontFamily">@font/faktpro_normal</item>-->
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorControlActivated">@color/colorASPrimary</item>
+        <item name="android:colorForeground">@color/textColorGray</item>
+    </style>
+
+    <style name="Activity.Fullscreen.Theme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/faktpro_semibold</item>
+    </style>
+
+
+    <style name="TabLayoutTextStyleContestDetail" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/faktpro_semibold</item>
+        <item name="textAllCaps">false</item>
+
+    </style>
+
+
+
+    <style name="TabLayoutTextStyleContestDetail1" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/faktpro_semibold</item>
+        <item name="textAllCaps">false</item>
+
+    </style>
+
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabLayoutTextStyleContestDetail</item>
+    </style>
+
+
+    <style name="MyCustomTabLayout1" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabLayoutTextStyleContestDetail1</item>
+    </style>
+
+    <style name="myCustomMenuTextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!--Zopim chat -->
+    <style name="ZopimChatTheme" parent="AppTheme">
+        <!--Chat UI uses the toolbar so no need to show ActionBar-->
+        <item name="windowActionBar">false</item>
+        <!-- Customize chat theme here. -->
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Small"></style>
+
+    <style name="TextStyleShowcaseTitle" parent="Theme.AppCompat.DayNight">
+        <item name="android:fontFamily">@font/faktpro_semibold</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyleShowcaseDescription" parent="Theme.AppCompat.DayNight">
+        <item name="android:fontFamily">@font/faktpro_medium</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/colorTransparentDarkBlack</item>
+        <item name="sv_showcaseColor">@color/showcasebackgroundCircleColor</item>
+        <item name="sv_buttonText">Hide</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/TextStyleShowcaseTitle</item>
+        <item name="sv_detailTextAppearance">@style/TextStyleShowcaseDescription</item>
+    </style>
+
+    <style name="AppThemeSplash" parent="android:Theme">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+
+    <!--<style name="popup_window_animation_phone">-->
+    <!--<item name="android:windowEnterAnimation">@android:anim/fade_in_animation</item>-->
+    <!--</style>-->
+</resources>

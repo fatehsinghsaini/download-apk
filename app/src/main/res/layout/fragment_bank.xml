@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtBankRejectReason"
+            style="@style/TextStyleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBankRejectReason"
+            android:fillViewport="true">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewAfterBankVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/colorContestItemBackground"
+                android:padding="@dimen/_8sdp"
+                android:visibility="visible"
+                card_view:cardCornerRadius="@dimen/_5sdp"
+                card_view:cardElevation="@dimen/_3sdp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:src="@mipmap/bankaccounticon"
+                            android:tint="@color/colorASPrimary" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextStyleNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:gravity="start|bottom"
+                            android:text="@string/verify_bank_account"
+                            android:textColor="@color/textColorLightBlack"
+                            android:textSize="@dimen/_16sdp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextStyleNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+
+                        android:gravity="start|center"
+                        android:text="@string/verify_your_account_to_withdraw_winnings"
+                        android:textColor="@color/textColorGray"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnUploadBankImage"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:text="@string/update_account_proof"
+                        android:background="@drawable/back_login_button"
+                        android:gravity="center"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextStyleNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start|center"
+                        android:text="@string/bank_proof_of_passbook_cheque_book_or_bank_statement"
+                        android:textColor="@color/textColorLightBlack"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextStyleNormal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="start|center"
+                            android:text="@string/which_shows_your"
+                            android:textColor="@color/textColorLightBlack"
+                            android:textSize="@dimen/_8sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextStyleNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:gravity="start|center"
+                            android:text="@string/name_ifsc_code_account_no"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:theme="@style/EditTextLabel"
+                        card_view:layout_constraintEnd_toStartOf="@id/txt_ApplyCode">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtAccountNamber"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/account_number"
+                            android:imeOptions="actionNext"
+                            android:drawableStart="@mipmap/addfriend"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:inputType="number"
+                            android:maxLength="18"
+                            android:textSize="@dimen/_11sdp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextStyleNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:gravity="start|center"
+                        android:text="Your bankDetails account number"
+                        android:textColor="@color/textColorGray"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:theme="@style/EditTextLabel"
+                        card_view:layout_constraintEnd_toStartOf="@id/txt_ApplyCode">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtRetypeAcoountNumber"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/retype_account_number"
+                            android:drawableStart="@mipmap/addfriend"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="18"
+                            android:textSize="@dimen/_11sdp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:theme="@style/EditTextLabel"
+                        card_view:layout_constraintEnd_toStartOf="@id/txt_ApplyCode">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtIFSCCode"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/ifsc_code"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:drawableStart="@mipmap/addfriend"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/_11sdp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:editable="false"
+                        android:theme="@style/EditTextLabel"
+                        card_view:layout_constraintEnd_toStartOf="@id/txt_ApplyCode">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtBankname"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:drawableStart="@mipmap/addfriend"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:enabled="false"
+                            android:hint="@string/bank_name"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:textSize="@dimen/_11sdp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:editable="false"
+                        android:theme="@style/EditTextLabel"
+                        card_view:layout_constraintEnd_toStartOf="@id/txt_ApplyCode">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtBankbranch"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:enabled="false"
+                            android:drawableStart="@mipmap/addfriend"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/bank_branch"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:textSize="@dimen/_11sdp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextStyleNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:text="* All fields are mandatory"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSubmitVerificationForBank"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/back_login_button"
+                        android:gravity="center"
+                        android:backgroundTint="@color/green_color"
+                        android:text="@string/submit_for_verification" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardviewBankBeforeVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:backgroundTint="@color/colorContestItemBackground"
+            android:visibility="gone"
+            card_view:cardCornerRadius="@dimen/_5sdp"
+            card_view:cardElevation="@dimen/_3sdp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@mipmap/bankaccounticon"
+                        android:tint="@color/colorASPrimary" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextStyleNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:gravity="start|bottom"
+                        android:text="@string/verify_bank_account"
+                        android:textColor="@color/textColorLightBlack"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextStyleNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:gravity="start|center"
+                    android:text="@string/verify_your_account_to_withdraw_winnings"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="top"
+                        android:src="@mipmap/alerticonbank" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextStyleNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:gravity="start|center"
+                        android:text="@string/to_transfer_winnings_to_your_bankdetails_account_please_complete_the_steps_mentioned_below"
+                        android:textColor="@color/textColorGray"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardVieAfterBankReviewVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@color/colorContestItemBackground"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone"
+            card_view:cardCornerRadius="@dimen/_5sdp"
+            card_view:cardElevation="@dimen/_3sdp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextStyleNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:text="Your Account details are under review"
+                    android:textColor="@color/vicecaptainColor"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextStyleNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text="@string/your_bank_details_have_been_submitted"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextStyleNormal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="start|bottom"
+            android:padding="@dimen/_10sdp"
+            android:text="Note: Please update your profile before request to verification of bank detail."
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

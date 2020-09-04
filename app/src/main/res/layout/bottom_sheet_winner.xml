@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+    <LinearLayout
+            android:id="@+id/ll_title"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+            android:background="@color/colorASPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_TeamCount"
+                style="@style/ToolbarTitleStyle"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/textColorOffWhite"
+                android:text="@string/choose_total_winners"
+                android:layout_height="match_parent"/>
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_Close"
+                android:gravity="start"
+                app:srcCompat="@mipmap/close"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColorOffWhite"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/ll_title"
+            android:id="@+id/rv_rank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/item_winners_list_bottomsheet"
+            android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
